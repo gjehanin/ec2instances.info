@@ -9,7 +9,8 @@ cd ec2instances.info/
 
 #replace IP dans fabfile.py
 IP=$(hostname -I)
-sed -i '30s/.*/FAB_HOST = os.getenv('FAB_HOST', '127.0.0.1')/' fabfile.py
+IP=$(echo ${IP// /})
+sed -i "30s/.*/FAB_HOST = os.getenv(\'FAB_HOST\', \'${IP}\')/" fabfile.py
 
 virtualenv env
 source env/bin/activate
