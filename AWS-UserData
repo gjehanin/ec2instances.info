@@ -8,7 +8,7 @@ git clone https://github.com/gjehanin/ec2instances.info
 cd ec2instances.info/
 
 #replace IP dans fabfile.py
-ip=hostname -I
+IP=$(hostname -I)
 sed -i '30s/.*/FAB_HOST = os.getenv('FAB_HOST', '127.0.0.1')/' fabfile.py
 
 virtualenv env
