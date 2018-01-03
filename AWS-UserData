@@ -2,7 +2,7 @@
 
 sudo su
 apt-get upgrade -y
-apt-get install python-dev libxml2-dev libxslt1-dev libssl-dev virtualenv -qy
+apt-get install python-dev libxml2-dev libxslt1-dev libssl-dev build-essential virtualenv -qy
 git clone https://github.com/gjehanin/ec2instances.info
 cd ec2instances.info/
 virtualenv env
