@@ -50,8 +50,9 @@
 
     </div>
 
-    <script src="/bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/1.2.4/js/dataTables.buttons.min.js"></script>
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/1.2.4/js/buttons.flash.min.js"></script>
