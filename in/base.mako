@@ -11,12 +11,12 @@
 
   <body class="ec2instances">
     <div class="page-header">
-
+<!--
       <span class="pull-right">
         <a href="https://twitter.com/share" class="twitter-share-button" data-via="powdahound"></a>
         <iframe src="https://ghbtns.com/github-btn.html?user=powdahound&repo=ec2instances.info&type=star&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
       </span>
-
+-->
       <%block name="header"/>
 
       <p class="pull-right label label-info">Last Update: ${generated_at}</p>
