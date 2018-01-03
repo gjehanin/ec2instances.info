@@ -30,6 +30,7 @@
 
     ${self.body()}
 
+<!--
     <div class="well">
       <p>
         <strong>Why?</strong>
@@ -49,7 +50,7 @@
       </p>
 
     </div>
-
+-->
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="/bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
