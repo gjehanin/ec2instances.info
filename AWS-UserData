@@ -4,12 +4,13 @@ sudo su
 apt-get upgrade -y
 apt-get install awscli python-dev libxml2-dev libxslt1-dev libssl-dev build-essential virtualenv -qy
 
+git clone https://github.com/gjehanin/ec2instances.info
+cd ec2instances.info/
+
 #replace IP dans fabfile.py
 ip=hostname -I
 sed -i '30s/.*/FAB_HOST = os.getenv('FAB_HOST', '127.0.0.1')/' fabfile.py
 
-git clone https://github.com/gjehanin/ec2instances.info
-cd ec2instances.info/
 virtualenv env
 source env/bin/activate
 pip install -r requirements.txt
