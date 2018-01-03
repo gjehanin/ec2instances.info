@@ -28,13 +28,13 @@ abspath = lambda filename: os.path.join(os.path.abspath(os.path.dirname(__file__
                                         filename)
 
 FAB_HOST = os.getenv('FAB_HOST', '127.0.0.1')
-FAB_PORT = os.getenv('FAB_PORT', '')
+FAB_PORT = os.getenv('FAB_PORT', '8080')
 
 @task
 def build():
     """Scrape AWS sources for data and build the site"""
     scrape_ec2()
-    scrape_rds()
+    #scrape_rds()
     render_html()
 
 
@@ -73,7 +73,7 @@ def serve():
 def render_html():
     """Render HTML but do not update data from Amazon"""
     render('www/instances.json', 'in/index.html.mako', 'www/index.html')
-    render('www/rds/instances.json', 'in/rds.html.mako', 'www/rds/index.html')
+    #render('www/rds/instances.json', 'in/rds.html.mako', 'www/rds/index.html')
 
 
 @task
