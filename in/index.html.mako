@@ -5,7 +5,7 @@
 <%inherit file="base.mako" />
 
     <%block name="header">
-    <h1>EC2Instances.info <small>Easy Amazon EC2 Instance Comparison</small></h1>
+    <h1>EC2Instances.info <small>My Own Amazon EC2 Instance Comparison</small></h1>
     </%block>
 
     <div class="row" id="menu">
@@ -26,6 +26,7 @@
             <li><a href="javascript:;" data-region='eu-central-1'>EU (Frankfurt)</a></li>
             <li><a href="javascript:;" data-region='eu-west-1'>EU (Ireland)</a></li>
             <li><a href="javascript:;" data-region='eu-west-2'>EU (London)</a></li>
+            <li><a href="javascript:;" data-region='eu-west-3'>EU (Paris)</a></li>
             <li><a href="javascript:;" data-region='sa-east-1'>South America (S&atilde;o Paulo)</a></li>
             <li><a href="javascript:;" data-region='us-east-1'>US East (N. Virginia)</a></li>
             <li><a href="javascript:;" data-region='us-east-2'>US East (Ohio)</a></li>
